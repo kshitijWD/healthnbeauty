@@ -1873,7 +1873,6 @@ ul.footer-social-icons li a:hover { background-color: var(--base-dark); color: v
 .prt-page-title-row { 
     background-image: url(../images/pagetitle-bg.jpg);
     width: 100%;
-    position: relative;
     z-index: 1;
     background-position: bottom;
     background-size: cover;
@@ -1970,7 +1969,7 @@ ul.footer-social-icons li a:hover { background-color: var(--base-dark); color: v
 .prt-page-title-row.style2 .prt-page-title-row-inner{ 
     text-align: left; 
     background-color: rgba(0,0,0,0.30);
-    padding: 65px 0;
+    padding: 65px 0 114px; 
 }
 .prt-page-title-row.style2 .prt-page-title-row-heading{
     padding-right: 100px;
@@ -2733,4 +2732,122 @@ body .page.sticky-column {
 .main-box{ 
     position: relative; 
     min-height: 680px;
+}
+
+
+.hny_appointment {
+    background: #fff;
+    box-shadow: 4px 5px 50px rgba(0, 0, 0, .2);
+    padding: 0;
+    border-radius: 8px;
+    width: 100%;
+    color: black;
+}
+.hny_appointment input,select,textarea {
+    background-color: #262626 !important;
+}
+.bottom-banner-menu {
+    position: absolute;
+    bottom: -50px;
+    z-index: 999;
+    width: 100%;
+}
+.bottom_left__area {
+    background-color: #1f6306;
+    padding: 16px;
+    border-radius: 12px;
+}
+.consult_docc {
+    background-color: #1f6306;
+    display: flex;
+    height: 100%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.consult_docc a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 13px;
+}
+.consult_docc a:hover img {
+    transform: rotateY(344deg);
+}
+.consult_docc a:hover {
+    color: #ffcd1e;
+}
+.hny_divider_hs {
+    width: 1px;
+    height: 100%;
+    background-color: #c9c9c9;
+    transform: rotate(16deg);
+}
+.dessi_img {
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    background: #fff;
+    height: 90px;
+    line-height: 90px;
+    width: 75px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 8%);
+    position: absolute;
+    bottom: -22px;
+    left: 42px;
+}
+.boot__categori select {
+    background-color: transparent !important;
+    color: white;
+    border: none;
+    padding: 0;
+    font-family: "Philosopher", sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.boot__categori label {
+    color: #ffcd1e;
+}
+.boot__categori option {
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid gray;
+}
+.top_form__secc h3 {
+    font-family: 'Philosopher';
+    font-size: 60px;
+}
+.top_form__secc {
+    padding: 61px 45px 28px;
+    background: #c3cc9d;
+    border-radius: 8px 8px 0 0;
+}
+form.query_form-1.wrap-form.clearfix {
+    padding: 30px;
+}
+.featured-title h2 {
+    font-family: 'Philosopher';
+    margin: 0;
+}
+@media (max-width: 767px){
+    .hny_dd_none {
+        display: none;
+    }
+    .consult_docc {
+        display: none;
+    }
+    .prt-btn.prt-btn-size-md {
+        padding: 10px 20px 9px !important;
+    }
+    .appointment-mask-circle {
+        display: none;
+    }
+    .boot__categori select {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
 }

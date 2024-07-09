@@ -217,21 +217,24 @@
                 </div>
                 <div class="col">
                     <!--featured-icon-box-->
-                    <div class="featured-icon-box icon-align-before-content icon-ver_align-top style1">
-                        <div class="featured-icon">
-                            <div class="prt-icon prt-icon_element-onlytxt prt-icon_element-color-darkcolor prt-icon_element-style-rounded prt-icon_element-size-md">
-                                <img class="img-fluid" src="images/icons/2.png" alt="img">
+                    <a href="listing.php">
+                        <div class="featured-icon-box icon-align-before-content icon-ver_align-top style1">
+                            <div class="featured-icon">
+                                <div class="prt-icon prt-icon_element-onlytxt prt-icon_element-color-darkcolor prt-icon_element-style-rounded prt-icon_element-size-md">
+                                    <img class="img-fluid" src="images/icons/2.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="featured-content">
+                                <div class="featured-title">
+                                    <h3>Endocrine</h3>
+                                </div>
                             </div>
                         </div>
-                        <div class="featured-content">
-                            <div class="featured-title">
-                                <h3>Endocrine</h3>
-                            </div>
-                        </div>
-                    </div><!--featured-icon-box end-->
+                    </a>
                 </div>
                 <div class="col">
                     <!--featured-icon-box-->
+                    <a href="listing.php">
                     <div class="featured-icon-box icon-align-before-content icon-ver_align-top style1">
                         <div class="featured-icon">
                             <div class="prt-icon prt-icon_element-onlytxt prt-icon_element-color-darkcolor prt-icon_element-style-rounded prt-icon_element-size-md">
@@ -244,9 +247,11 @@
                             </div>
                         </div>
                     </div><!--featured-icon-box end-->
+                    </a>
                 </div>
                 <div class="col">
                     <!--featured-icon-box-->
+                    <a href="listing.php">
                     <div class="featured-icon-box icon-align-before-content icon-ver_align-top style1">
                         <div class="featured-icon">
                             <div class="prt-icon prt-icon_element-onlytxt prt-icon_element-color-darkcolor prt-icon_element-style-rounded prt-icon_element-size-md">
@@ -259,9 +264,11 @@
                             </div>
                         </div>
                     </div><!--featured-icon-box end-->
+                    </a>
                 </div>
                 <div class="col">
                     <!--featured-icon-box-->
+                    <a href="listing.php">
                     <div class="featured-icon-box icon-align-before-content icon-ver_align-top style1">
                         <div class="featured-icon">
                             <div class="prt-icon prt-icon_element-onlytxt prt-icon_element-color-darkcolor prt-icon_element-style-rounded prt-icon_element-size-md">
@@ -274,9 +281,11 @@
                             </div>
                         </div>
                     </div><!--featured-icon-box end-->
+                    </a>
                 </div>
                 <div class="col">
                     <!--featured-icon-box-->
+                    <a href="listing.php">
                     <div class="featured-icon-box icon-align-before-content icon-ver_align-top style1">
                         <div class="featured-icon">
                             <div class="prt-icon prt-icon_element-onlytxt prt-icon_element-color-darkcolor prt-icon_element-style-rounded prt-icon_element-size-md">
@@ -289,14 +298,14 @@
                             </div>
                         </div>
                     </div><!--featured-icon-box end-->
+                    </a>
                 </div>
             </div><!--row end-->
         </div>
         <div class="row py-5">
             <div class="col-xl-7 col-lg-10 col-md-12 m-auto">
                 <div class="prt-product-text">
-                    <p><a class="prt-btn btn-inline prt-btn-color-whitecolor btn-underline" href="#">View
-                            all Diseases</a></p>
+                    <p><a class="prt-btn btn-inline prt-btn-color-whitecolor btn-underline" href="#">View all Diseases</a></p>
                 </div>
             </div>
         </div>
