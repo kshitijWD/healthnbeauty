@@ -109,7 +109,7 @@
                                                                 <li><a target="_blank" href="https://academy.jiva.com">Well-being Academy</a></li>
                                                             </ul>
                                                         </li>
-                                                        <li class="mega-menu-item"><a href="javascript:;">Blogs</a></li>
+                                                        <li class="mega-menu-item"><a href="blog.php">Blogs</a></li>
                                                         <li class="mega-menu-item"><a href="javascript:;">Testimonials</a></li>
                                                         <li class="mega-menu-item"><a href="javascript:;">Why Choose US</a></li>
                                                     </ul>
