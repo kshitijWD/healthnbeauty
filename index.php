@@ -21,6 +21,11 @@
     .featured-icon-box.icon-align-before-content.icon-ver_align-top .featured-icon {
         padding: 0px !important;
     }
+    .swal2-popup.swal2-toast .swal2-title {
+        font-size: 18px !important;
+        line-height: 34px !important;
+        text-align: center !important;
+    }
 </style>
 <div class="hero-section prt-bg">
     <div class="hero-slider-wrapper">
@@ -217,21 +222,24 @@
                 </div>
                 <div class="col">
                     <!--featured-icon-box-->
-                    <div class="featured-icon-box icon-align-before-content icon-ver_align-top style1">
-                        <div class="featured-icon">
-                            <div class="prt-icon prt-icon_element-onlytxt prt-icon_element-color-darkcolor prt-icon_element-style-rounded prt-icon_element-size-md">
-                                <img class="img-fluid" src="images/icons/2.png" alt="img">
+                    <a href="listing.php">
+                        <div class="featured-icon-box icon-align-before-content icon-ver_align-top style1">
+                            <div class="featured-icon">
+                                <div class="prt-icon prt-icon_element-onlytxt prt-icon_element-color-darkcolor prt-icon_element-style-rounded prt-icon_element-size-md">
+                                    <img class="img-fluid" src="images/icons/2.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="featured-content">
+                                <div class="featured-title">
+                                    <h3>Endocrine</h3>
+                                </div>
                             </div>
                         </div>
-                        <div class="featured-content">
-                            <div class="featured-title">
-                                <h3>Endocrine</h3>
-                            </div>
-                        </div>
-                    </div><!--featured-icon-box end-->
+                    </a>
                 </div>
                 <div class="col">
                     <!--featured-icon-box-->
+                    <a href="listing.php">
                     <div class="featured-icon-box icon-align-before-content icon-ver_align-top style1">
                         <div class="featured-icon">
                             <div class="prt-icon prt-icon_element-onlytxt prt-icon_element-color-darkcolor prt-icon_element-style-rounded prt-icon_element-size-md">
@@ -244,9 +252,11 @@
                             </div>
                         </div>
                     </div><!--featured-icon-box end-->
+                    </a>
                 </div>
                 <div class="col">
                     <!--featured-icon-box-->
+                    <a href="listing.php">
                     <div class="featured-icon-box icon-align-before-content icon-ver_align-top style1">
                         <div class="featured-icon">
                             <div class="prt-icon prt-icon_element-onlytxt prt-icon_element-color-darkcolor prt-icon_element-style-rounded prt-icon_element-size-md">
@@ -259,9 +269,11 @@
                             </div>
                         </div>
                     </div><!--featured-icon-box end-->
+                    </a>
                 </div>
                 <div class="col">
                     <!--featured-icon-box-->
+                    <a href="listing.php">
                     <div class="featured-icon-box icon-align-before-content icon-ver_align-top style1">
                         <div class="featured-icon">
                             <div class="prt-icon prt-icon_element-onlytxt prt-icon_element-color-darkcolor prt-icon_element-style-rounded prt-icon_element-size-md">
@@ -274,9 +286,11 @@
                             </div>
                         </div>
                     </div><!--featured-icon-box end-->
+                    </a>
                 </div>
                 <div class="col">
                     <!--featured-icon-box-->
+                    <a href="listing.php">
                     <div class="featured-icon-box icon-align-before-content icon-ver_align-top style1">
                         <div class="featured-icon">
                             <div class="prt-icon prt-icon_element-onlytxt prt-icon_element-color-darkcolor prt-icon_element-style-rounded prt-icon_element-size-md">
@@ -289,14 +303,14 @@
                             </div>
                         </div>
                     </div><!--featured-icon-box end-->
+                    </a>
                 </div>
             </div><!--row end-->
         </div>
         <div class="row py-5">
             <div class="col-xl-7 col-lg-10 col-md-12 m-auto">
                 <div class="prt-product-text">
-                    <p><a class="prt-btn btn-inline prt-btn-color-whitecolor btn-underline" href="#">View
-                            all Diseases</a></p>
+                    <p><a class="prt-btn btn-inline prt-btn-color-whitecolor btn-underline" href="#">View all Diseases</a></p>
                 </div>
             </div>
         </div>
@@ -521,23 +535,24 @@
             <div class="row mt-25">
                 <div class="col-lg-12">
                     <div class="prt-appointment-block">
-                        <form action="#" class="query_form wrap-form clearfix" method="post">
+                        <form action="javascript:;" method="post" enctype="multipart/form-data" class="contact-from query_form wrap-form clearfix">
+                            
                             <div class="row">
                                 <div class="col-lg-8 col-md-12">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <span class="text-input">
-                                                <input name="name" type="text" value="" placeholder="Name*" required="required">
+                                                <input name="name" type="text" value="" placeholder="Name*" required>
                                             </span>
                                         </div>
                                         <div class="col-md-6">
                                             <span class="text-input">
-                                                <input name="phone" type="text" value="" placeholder="Phone*" required="required">
+                                                <input oninput="this.value = this.value.replace(/\D+/g, '')" name="phone" type="text" value="" placeholder="Phone*" required>
                                             </span>
                                         </div>
                                         <div class="col-md-6">
                                             <span class="text-input select-option">
-                                                <select id="subject" name="user_state">
+                                                <select id="subject" name="subject">
                                                     <option value="select-subject">Subject*</option>
                                                     <option value="subject1">General Medicine</option>
                                                     <option value="subject2">Pediatrics</option>
@@ -548,18 +563,20 @@
                                         </div>
                                         <div class="col-md-6">
                                             <span class="text-input">
-                                                <input name="date" type="date" value="" required="required">
+                                                <input name="date" type="date" value="" >
                                             </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-12">
                                     <span class="text-input">
-                                        <textarea name="message" rows="4" placeholder="Message*" required="required"></textarea>
+                                        <textarea name="message" rows="4" placeholder="Message" ></textarea>
                                     </span>
                                 </div>
                                 <div class="col-md-12 text-center">
-                                    <button class="prt-btn prt-btn-size-md prt-btn-shape-round prt-btn-style-fill prt-btn-color-darkcolor" type="submit">Make a appointment</button>
+                                    <input type="hidden" name="formType" value="contact_form">
+                                    <button class="prt-btn prt-btn-size-md prt-btn-shape-round prt-btn-style-fill prt-btn-color-darkcolor" id="#contbtn" type="submit">Make a appointment</button>
+                                    
                                 </div>
                             </div>
                         </form>

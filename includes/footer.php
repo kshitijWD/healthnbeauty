@@ -152,6 +152,8 @@
 <script src="js/imagesloaded.min.js"></script>
 <script src="js/circle-progress.min.js"></script>
 <script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/code.js"></script>
 <script src="js/aos.js"></script>
 <script>
     AOS.init({
