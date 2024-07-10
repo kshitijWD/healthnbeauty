@@ -100,7 +100,7 @@
                                                         <li class="mega-menu-item">
                                                             <a href="#" class="mega-menu-link">Services</a>
                                                             <ul class="mega-submenu">
-                                                                <li><a href="https://www.jiva.com/treatment/video">Video Consultation</a></li>
+                                                                <li><a href="video-consultation.php">Video Consultation</a></li>
                                                                 <li><a href="https://www.jiva.com/treatment/clinic" target="_blank">Clinic Consultation</a></li>
                                                                 <li><a href="https://www.jiva.com/treatment/phone" target="_blank">Phone Consultation</a></li>
 

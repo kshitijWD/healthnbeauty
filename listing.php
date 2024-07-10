@@ -78,12 +78,11 @@
         </div>
     </div>
 </div>
-</div>
-<!-- page-title end-->
-<!-- site-main start -->
+
+
 <div class="site-main">
 
-    <!-- appointment-section -->
+
     <section class="prt-row appointment-section01 clearfix">
         <div class="container">
             <div class="row align-items-center">
@@ -100,7 +99,7 @@
                                 </div>
                                 <div class="featured-desc">
                                     <p>Personalized Ayurvedic medicine for skin allergy and hair disease is complimented by customized skin & hair care routine and home remedy based on the problem. Use of chemical-based cosmetics, exposure to excessive heat or pollution.</p>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -135,7 +134,7 @@
                                     <label for="terms" class="terms">
                                         I agree to the <span><a href="javascript:;">terms &amp; conditions.</a></span>
                                     </label>
-                                    
+
                                 </div>
                                 <div class="col-md-12 mt-20">
                                     <button class="prt-btn prt-btn-size-md prt-btn-shape-round prt-btn-style-fill prt-btn-color-darkcolor" type="submit">Make a appointment</button>
@@ -259,4 +258,5 @@
         </div>
     </section>
     <!--service-section end-->
-    <?php include('includes/footer.php') ?>
+</div>
+<?php include('includes/footer.php') ?>

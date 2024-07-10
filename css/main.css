@@ -1879,6 +1879,14 @@ ul.footer-social-icons li a:hover { background-color: var(--base-dark); color: v
     background-repeat: no-repeat;
     background-color: var(--base-dark);
 }
+.hny_new__bg___1{
+    background-image: url(../images/services_bg.png) !important;
+    width: 100%;
+    z-index: 1;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .prt-page-title-row-inner {
     position: relative;
     width: 100%;
@@ -2833,6 +2841,53 @@ form.query_form-1.wrap-form.clearfix {
     font-family: 'Philosopher';
     margin: 0;
 }
+
+.bottom-video-banner ul {
+    display: flex;
+    background-color: white;
+    gap: 21px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.bottom-video-banner ul {
+    display: flex;
+    background-color: white;
+    gap: 21px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.bottom-video-banner li img {
+    width: 28px;
+}
+
+.client-box .prt-client-logo-tooltip {
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    border-width: 1px 1px 1px 0;
+    border-style: solid;
+    border-color: var(--base-dark);
+    padding: 22px 0 23px;
+    background-color: var(--base-grey);
+}
+
+.client-thumbnail h2 {
+    font-size: 24px;
+    max-width: 139px;
+    margin: auto;
+    line-height: 1;
+
+}
+
+
+
+
+
+
+
+
 @media (max-width: 767px){
     .hny_dd_none {
         display: none;
