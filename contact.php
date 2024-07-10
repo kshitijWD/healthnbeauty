@@ -1,7 +1,9 @@
-<?php include("includes/header.php"); ?>
+<?php include("includes/header.php");
+
+?>
 
             <!-- contact-section -->
-            <section class="prt-row contact-section01 clearfix">
+            <section class="prt-row contact-section01 clearfix" >
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-10 col-lg-12 m-auto">
@@ -151,7 +153,7 @@
                                                         <p class="text-base-white">Get a free medical checkup</p>
                                                         <div class="mt-25">
                                                             <a class="prt-btn prt-btn-size-md prt-btn-shape-round prt-btn-style-fill prt-btn-color-skincolor"
-                                                                href="contact-us.html">Get a appointment</a>
+                                                                href="#contact_section">Get a appointment</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -198,28 +200,31 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-10 col-lg-12 m-auto">
-                            <div class="prt-contactblock">
+                            <div class="prt-contactblock" id="contact_section">
                                 <h3>Request a quote</h3>
                                 <p>Your inquiries matter to us and please don't hesitate to reach out today and let<br>
                                     begin a conversion leading you to the best solutions.</p>
-                                <form action="#" class="query_form-2 wrap-form clearfix mt-25" method="post">
+                                <form action="javascript:;" class="query_form-2 wrap-form clearfix mt-25" method="post" id="contactForm">
                                     <div class="row">
                                         <div class="col-md-4">
                                             <span class="text-input">
                                                 <input name="name" type="text" value="" placeholder="Your name"
                                                     required="required">
+                                                <span class="text-danger text-small" id="nameerr"></span>
                                             </span>
                                         </div>
                                         <div class="col-md-4">
                                             <span class="text-input">
                                                 <input name="email" type="text" value="" placeholder="Your email"
                                                     required="required">
+                                                <span class="text-danger text-small" id="emailerr"></span>
                                             </span>
                                         </div>
                                         <div class="col-md-4">
                                             <span class="text-input">
                                                 <input name="phone" type="text" value="" placeholder="Phone number"
                                                     required="required">
+                                                <span class="text-danger text-small" id="phoneerr"></span>
                                             </span>
                                         </div>
                                         <div class="col-md-12">
@@ -337,3 +342,42 @@
 
         </div><!-- site-main end-->
 <?php include("includes/footer.php"); ?>
+
+<script>
+    $('#contactForm').on("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        let contactForm = document.getElementById('contactForm'); // Get the DOM element
+        
+        $.ajax({
+            url: "requests/contact_req.php", 
+            method: "post",
+            data: new FormData(contactForm),
+            contentType: false, // Needed when using FormData
+            processData: false, // Needed when using FormData
+            success: function(result){
+                $res = JSON.parse(result);
+
+                // Clear previous error messages
+                $('.text-danger .text-small').text('');
+
+                // Append error messages to the respective span elements
+                for (let key in $res.error) {
+                    if ($res.error.hasOwnProperty(key)) {
+                        $('#' + key).text($res.error[key]);
+                    }
+                }
+
+                if($res.status == false){
+                    alert("Request couldn't submitted ...!");
+                }else{
+                    contactForm.reset();
+                    alert("Request submitted successfully ...!");
+                }
+            },
+            error: function(xhr, status, error) {
+              console.error('Error:', error);
+              alert('An error occurred while processing the request.');
+            }
+        });   
+    });
+</script>

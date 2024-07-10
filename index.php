@@ -38,8 +38,8 @@
                                         <h2 class="title"><span>Ayurveda</span> Care</h2>
                                     </div>
                                     <div class="hero-slider_btn mt-10 res-991-mt-30">
-                                        <a class="prt-btn prt-btn-size-md prt-btn-shape-round prt-btn-style-fill prt-btn-color-skincolor mr-15 mb-10" href="contact-us.html">Make an appointment</a>
-                                        <a class="prt-btn prt-btn-size-md prt-btn-shape-round prt-btn-style-border prt-btn-color-whitecolor mb-10" href="contact-us.html">Contact us</a>
+                                        <a class="prt-btn prt-btn-size-md prt-btn-shape-round prt-btn-style-fill prt-btn-color-skincolor mr-15 mb-10" href="contact.php">Make an appointment</a>
+                                        <a class="prt-btn prt-btn-size-md prt-btn-shape-round prt-btn-style-border prt-btn-color-whitecolor mb-10" href="contact.php">Contact us</a>
                                     </div>
                                 </div>
                             </div>
@@ -69,7 +69,7 @@
                                     </div>
                                     <div class="d-flex align-items-center mt-50 res-991-mt-30">
                                         <div class="hero-slider_btn">
-                                            <a class="prt-btn prt-btn-size-md prt-btn-shape-round prt-btn-style-fill prt-btn-color-skincolor mr-25 mb-10" href="contact-us.html">Make an appointment</a>
+                                            <a class="prt-btn prt-btn-size-md prt-btn-shape-round prt-btn-style-fill prt-btn-color-skincolor mr-25 mb-10" href="contact.php">Make an appointment</a>
                                         </div>
                                         <div class="prt-hero-link">
                                             <div class="prt-call"><i class="icon-whatsapp"></i> <a href="tel:1234567890">+123 456 7890</a></div>
@@ -491,7 +491,7 @@
                             <h3 class="cta-titlepre">Get a free medical checkup</h3>
                         </div>
                         <div class="cta-bnt mt-40 fadeup-amin">
-                            <a class="prt-btn prt-btn-size-md prt-btn-shape-round prt-btn-style-fill prt-btn-color-skincolor" href="contact-us.html">+3 (092) 508-38-01</a>
+                            <a class="prt-btn prt-btn-size-md prt-btn-shape-round prt-btn-style-fill prt-btn-color-skincolor" href="contact.php">+3 (092) 508-38-01</a>
                         </div>
                     </div>
                     <!-- section title end-->
@@ -702,7 +702,7 @@
                             </div>
                         </div>
                         <div class="prt-cta-btn res-1199-mt-30">
-                            <a class="prt-btn prt-btn-size-md prt-btn-shape-round prt-btn-style-border prt-btn-color-darkcolor ml-20" href="contact-us.html">Contact us</a>
+                            <a class="prt-btn prt-btn-size-md prt-btn-shape-round prt-btn-style-border prt-btn-color-darkcolor ml-20" href="contact.php">Contact us</a>
                         </div>
                     </div>
                 </div>
