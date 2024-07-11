@@ -53,9 +53,9 @@
                     <div class="footer-widget-box prt-pl">
                         <h3 class="widget-title-h3">Contact</h3>
                         <ul class="prt-list footer-cta-list">
-                            <li class="list-items">UA: <a href="tel:9999242432">+91 8096 272 2100</a></li>
-                            <li class="list-items">59 Street, 1200 Techpark</li>
-                            <li class="list-items"><a href="tel:9999242432">mail@veda-lab.com</a></li>
+                            <li class="list-items"><a href="tel:<?php echo $constantdata["phone"];?>"><?php echo $constantdata["phone"];?></a></li>
+                            <li class="list-items"><?php echo $constantdata["address"];?></li>
+                            <li class="list-items"><a href="mailto:<?php echo $constantdata["email"];?>"><?php echo $constantdata["email"];?></a></li>
                         </ul>
                         <!-- social-icons -->
                         <div class="social-icons">
@@ -63,15 +63,6 @@
                             <ul class="footer-social-icons">
                                 <li class="footer-social-icons-item">
                                     <a href="javascript:;" target="_blank" class="footer-social-icons-link">Facebook</a>
-                                </li>
-                                <li class="footer-social-icons-item">
-                                    <a href="javascript:;" target="_blank" class="footer-social-icons-link">Dribbble</a>
-                                </li>
-                                <li class="footer-social-icons-item">
-                                    <a href="javascript:;" target="_blank" class="footer-social-icons-link">Behance</a>
-                                </li>
-                                <li class="footer-social-icons-item">
-                                    <a href="javascript:;" target="_blank" class="footer-social-icons-link">Pinterest</a>
                                 </li>
                                 <li class="footer-social-icons-item">
                                     <a href="javascript:;" target="_blank" class="footer-social-icons-link">Instagram</a>
@@ -86,48 +77,13 @@
                                     <li><a href="javascript:;"> Help </a></li>
                                 </ul>
                                 <div class="cpy-text">
-                                    <p>2023 Vedacare © All rights reserved</p>
+                                    <p>2024 <?php echo $constantdata["name"];?> © All rights reserved</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="bottom-footer">
-        <div class="container-fluid p-0">
-            <!-- row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="marquee-block overflow-hidden">
-                        <div class="marquee">
-                            <div class="marquee-content">
-                                <div class="marquee-text">Like & follow from you. new free to use projects from
-                                    us. </div>
-                                <div class="marquee-text">Like & follow from you. new free to use projects from
-                                    us. </div>
-                                <div class="marquee-text">Like & follow from you. new free to use projects from
-                                    us. </div>
-                                <div class="marquee-text">Like & follow from you. new free to use projects from
-                                    us. </div>
-                                <div class="marquee-text">Like & follow from you. new free to use projects from
-                                    us. </div>
-                                <div class="marquee-text">Like & follow from you. new free to use projects from
-                                    us. </div>
-                                <div class="marquee-text">Like & follow from you. new free to use projects from
-                                    us. </div>
-                                <div class="marquee-text">Like & follow from you. new free to use projects from
-                                    us. </div>
-                                <div class="marquee-text">Like & follow from you. new free to use projects from
-                                    us. </div>
-                                <div class="marquee-text">Like & follow from you. new free to use projects from
-                                    us. </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- row end -->
         </div>
     </div>
 </footer>

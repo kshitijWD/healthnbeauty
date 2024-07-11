@@ -77,8 +77,8 @@
                                             <a class="prt-btn prt-btn-size-md prt-btn-shape-round prt-btn-style-fill prt-btn-color-skincolor mr-25 mb-10" href="contact.php">Make an appointment</a>
                                         </div>
                                         <div class="prt-hero-link">
-                                            <div class="prt-call"><i class="icon-whatsapp"></i> <a href="tel:1234567890">+123 456 7890</a></div>
-                                            <div class="prt-email"><a href="mailto:info@example.com">contact.vedacare@gmail.com</a>
+                                            <div class="prt-call"><i class="icon-whatsapp"></i> <a href="tel:<?php echo $constantdata["phone"];?>"><?php echo $constantdata["phone"];?></a></div>
+                                            <div class="prt-email"><a href="mailto:<?php echo $constantdata["email"];?>"><?php echo $constantdata["email"];?></a>
                                             </div>
                                         </div>
                                     </div>
@@ -505,7 +505,7 @@
                             <h3 class="cta-titlepre">Get a free medical checkup</h3>
                         </div>
                         <div class="cta-bnt mt-40 fadeup-amin">
-                            <a class="prt-btn prt-btn-size-md prt-btn-shape-round prt-btn-style-fill prt-btn-color-skincolor" href="contact.php">+3 (092) 508-38-01</a>
+                            <a class="prt-btn prt-btn-size-md prt-btn-shape-round prt-btn-style-fill prt-btn-color-skincolor" href="contact.php"><?php echo $constantdata["phone"];?></a>
                         </div>
                     </div>
                     <!-- section title end-->
@@ -712,7 +712,7 @@
                     <div class="prt-cta-mainblock ">
                         <div class="d-flex align-items-center justify-content-center">
                             <div class="prt-cta-call">
-                                <p>Looking for consultation? <a href="tel:1234567890">+1 3333 000 444</a></p>
+                                <p>Looking for consultation? <a href="tel:<?php echo $constantdata["phone"];?>"><?php echo $constantdata["phone"];?></a></p>
                             </div>
                             <div class="prt-cta-title">
                                 <h3>We are <span>certified</span> ayurved company</h3>

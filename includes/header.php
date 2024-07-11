@@ -1,4 +1,6 @@
-<?php include("connection/config.php");?>
+<?php include("connection/config.php");
+$constantdata = mysqli_fetch_array(mysqli_query($con, "SELECT * FROM `sch_settings`"));
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,8 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="Medisat - Medical  and Ayurvedic HTML Template, Childrio - Multi Medical Services HTML Theme, themes & template, html5 template, WordPress theme, unlimited colors available, ui/ux,ui/ux design, best html template, html template, html, JavaScript, best css theme,css3, elementor theme, latest premium themes 2024, latest premium templates 2024, preyan technosys Pvt.Ltd,cymol themes, themetech mount, ttm store, ttm business, ttm clinic, ttm medical, ttm, themetechmount store, ttm plugins,Web 3.0,multi-theme, website theme and template, woocommerce, bootstrap template, web templates, responsive theme,services,web design and development, business, company,  medical theme, medical template, clinical template, clinical website, child care, dentist demo, dentist clinic, physiotherapy, psychologist services website, eye care clinic, orthopedic, surgeon, surgery services, Pediatrician services, Eye care blog">
-    <meta name="description" content="Medisat - Medical  and Ayurvedic HTML Template">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Health & Beauty - Be Healthy, Be Fit, Be Beautiful</title>
 
@@ -44,19 +45,19 @@
             <!-- header start -->
             <header id="masthead" class="header prt-header-style-01">
                 <!-- topbar -->
-                <div class="top_bar prt-topbar-wrapper clearfix">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="top_bar_contact_item text-center">
-                                    <span class="top_bar_icon"><i class="flaticon flaticon-alert"></i></span>
-                                    Using its extensive fish farming experience and knowledge, Fleuren & Nooijen is now
-                                    a market <a href="javascript:;">View more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!--<div class="top_bar prt-topbar-wrapper clearfix">-->
+                <!--    <div class="container-fluid">-->
+                <!--        <div class="row">-->
+                <!--            <div class="col-lg-12">-->
+                <!--                <div class="top_bar_contact_item text-center">-->
+                <!--                    <span class="top_bar_icon"><i class="flaticon flaticon-alert"></i></span>-->
+                <!--                    Using its extensive fish farming experience and knowledge, Fleuren & Nooijen is now-->
+                <!--                    a market <a href="javascript:;">View more</a>-->
+                <!--                </div>-->
+                <!--            </div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
                 <!-- topbar end -->
                 <!-- site-header-menu -->
                 <div id="site-header-menu" class="site-header-menu">
@@ -124,7 +125,7 @@
                                             <!-- header_extra -->
                                             <div class="header_extra d-flex align-items-center">
                                                 <ul class="social-icons">
-                                                    <li><a class="prt-btn prt-btn-size-md prt-btn-shape-round prt-btn-style-fill prt-btn-color-skincolor w-100" href="tel:;">+3 (092) 508-38-01</a></li>
+                                                    <li><a class="prt-btn prt-btn-size-md prt-btn-shape-round prt-btn-style-fill prt-btn-color-skincolor w-100" href="tel:<?php echo $constantdata["phone"];?>;"><?php echo $constantdata["phone"];?></a></li>
                                                 </ul>
                                             </div>
                                             <!-- header_extra -->
